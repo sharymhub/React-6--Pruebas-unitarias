@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('rederiza que el boton verifica que el texto cambie correctamente.', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const BotonElement = screen.getByText("Hacer clic aquí");
+  expect(BotonElement).toBeInTheDocument();
 });
